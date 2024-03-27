@@ -27,6 +27,7 @@ public class Runner {
             System.out.println("Tebrikler, password gucu yuksek");
         }
 
+        System.out.println();
 
     }
 

@@ -14,5 +14,7 @@ public enum PasswordStrength {
 
     public int getLevel(){
         return this.level;
+
     }
+
 }
