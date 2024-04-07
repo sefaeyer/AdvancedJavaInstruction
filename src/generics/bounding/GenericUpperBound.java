@@ -6,7 +6,7 @@ public class GenericUpperBound<T extends Number> {
 
     public T[] numberArray;
 
-    //numberArray iindeki elemanlari hesaplayan method
+    //numberArray icindeki elemanlarin ortalamasini hesaplayan method
     public Double getAverage(){
 
         double sum=0;
@@ -26,19 +26,19 @@ public class GenericUpperBound<T extends Number> {
         Double[] doubles={0.3,99.3,10.0,2.3};
         String[] strings={"generics","ustten","sinirlandirilabilir"};
 
-        GenericUpperBound<Integer> obj1=new GenericUpperBound<>();
+        GenericUpperBound<Integer> obj1=new GenericUpperBound<>(); // T : Integer
         obj1.numberArray=integers;
 
         System.out.println(obj1.getAverage());
 
 
-        GenericUpperBound<Double> obj2=new GenericUpperBound<>();
+        GenericUpperBound<Double> obj2=new GenericUpperBound<>(); // T : Double
         obj2.numberArray=doubles;
 
         System.out.println(obj2.getAverage());
 
 
-      //  GenericUpperBound<String> obj3=new GenericUpperBound<>();   String almaz
+      //  GenericUpperBound<String> obj3=new GenericUpperBound<>();  // T : String -> almaz
 
 
 

@@ -3,7 +3,7 @@ package generics.bounding;
 import java.util.ArrayList;
 import java.util.List;
 
-//wildcard ne demek:  (?)  joker, bilinmeyen bir data tipi
+//wildcard ne demek:  (?)  joker, bilinmeyen data tipi demek
 public class GenericWithWildcard {
 
     public static void main(String[] args) {
@@ -23,6 +23,7 @@ public class GenericWithWildcard {
         //addElements(strings);
         addElements(numbers);
         addElements(objects);
+        System.out.println(objects);
 
 
         System.out.println("===========  ustten sinirlama  ============");
@@ -30,13 +31,24 @@ public class GenericWithWildcard {
         multiplyByTwo(doubles);
         //multiplyByTwo(strings);
         multiplyByTwo(numbers);
-        //multiplyByTwo(objects);
+        //multiplyByTwo(objects); // object dahil edilmedigi icin kabul etmedi
+
+
+        System.out.println("-------------- sadece wildcard ---------------");
+        printElements(integers);
+        printElements(doubles);
+        printElements(strings);
+        printElements(numbers);
+        printElements(objects);
 
 
     }
 
+
+
     //alttan sinirlama
-    //liste 1 den 10 a kadar elemanlari ekleyen method
+
+    //liste 1 den 10 a kadar integer elemanlari ekleyen method
     //list: Integer,Number,Object
     public static void addElements(List<? super Integer> list){
 
@@ -46,7 +58,7 @@ public class GenericWithWildcard {
 
     }
 
-    //generic yapiyi kullanirken ustten sinirlama
+    //generic yapiyi kullanirken  --> ustten sinirlama <--
     //listedeki elemanlari 2 ile carpan method
     public static void multiplyByTwo(List<? extends Number> list){
 
