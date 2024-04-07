@@ -6,6 +6,8 @@ import java.util.HashMap;
 public class RunnerGeneric {
     public static void main(String[] args) {
 
+        //generic yapilari kullanirken data tipine karar verilir
+        //2 farkli nesne: laptop, book
 
         GenericProduct<String> book=new GenericProduct<>();
         book.setCode("advjava");
@@ -18,10 +20,13 @@ public class RunnerGeneric {
 
         //  String str2=laptop.getCode();//ClassCastExc. alma riski çözüldü
 
-        Integer code=laptop.getCode();
+        Integer code = laptop.getCode();
 
 
+        //-----------------------------------------
         //----------------------------------------
+
+
         ArrayList<String> list = new ArrayList<>();
 
         HashMap<String,Double> hashMap=new HashMap<>();
@@ -39,15 +44,6 @@ public class RunnerGeneric {
 
         //S:Double , U:Boolean
         GenericClassTwoParam<Double,Boolean> obje3=new GenericClassTwoParam<>(11.11,Boolean.TRUE);
-
-
-
-
-
-
-
-
-
 
 
 

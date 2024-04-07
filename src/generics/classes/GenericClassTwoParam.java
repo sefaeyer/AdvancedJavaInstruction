@@ -7,15 +7,14 @@ public class GenericClassTwoParam<S,U> {
     private U deger;
 
     //param const
-
     public GenericClassTwoParam(S anahtar, U deger) {
         this.anahtar = anahtar;
         this.deger = deger;
     }
 
 
-    //getter setter
 
+    //getter setter
 
     public S getAnahtar() {
         return anahtar;

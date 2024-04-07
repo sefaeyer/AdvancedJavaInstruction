@@ -4,10 +4,11 @@ package generics.classes;
 //tek bir class ile urun objelerini olusturmak
 public class NonGenericProduct {
 
-    private Object code;// code field inin data tipi object oldugu icin olusturulan nesnelerin code ozellig
+    private Object code;// code field inin data tipi object oldugu icin olusturulan
+                        // nesnelerin code ozelliginde tum data tipleri kullanilabilir
+
 
     //getter setter
-
 
     public Object getCode() {
         return code;

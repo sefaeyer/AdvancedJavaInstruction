@@ -27,6 +27,7 @@ public class GenericMethod {
         System.out.println(getFirst(stringArr));
 
         Integer first=getFirst(intArr);
+        System.out.println("first = " + first);
 
         System.out.println("----------- coklu parametreli generic method -----------");
         printArrAndElement(intArr,"generic");//S:Integer , U:String
@@ -74,7 +75,7 @@ public class GenericMethod {
         return first;
     }
 
-    //birden fazla data tipi ile generic method
+    //  ***   birden fazla data tipi ile generic method   ***
     public static <S,U> void printArrAndElement(S[] arr, U element){
 
         //arr[0]=element; --> farkli data tipleri!!!

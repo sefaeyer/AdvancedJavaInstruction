@@ -19,7 +19,7 @@ package generics.classes;
 
 public class GenericProduct <T> {
 
-    private T code; // T : herhangi bir NON-PRIMITIVE data tipi
+    private T code; // T : her hangi bir NON-PRIMITIVE data tipi
 
     //GETTER SETTER
 
