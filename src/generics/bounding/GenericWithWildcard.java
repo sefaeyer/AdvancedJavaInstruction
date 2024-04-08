@@ -58,7 +58,7 @@ public class GenericWithWildcard {
 
     }
 
-    //generic yapiyi kullanirken  --> ustten sinirlama <--
+    //generic yapiyi kullanirken     --->   Ustten Sinirlama   <---
     //listedeki elemanlari 2 ile carpan method
     public static void multiplyByTwo(List<? extends Number> list){
 
